@@ -7,7 +7,3 @@ def result_logger(i,result,calc):
 def close_log():
     with open('log.txt', 'a') as file:
         file.close()
-        
-git remote add origin https://github.com/VladimirTialin/Room5Calc.git
-git branch -M main
-git push -u origin main
