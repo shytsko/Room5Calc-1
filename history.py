@@ -4,9 +4,6 @@ def result_logger(i,result,calc):
     time =  time.strftime("Date: %d.%m.%Y  Time: %H:%M")
     with open('log.txt', 'a') as file:
         file.write(f'{i}: {time} ,Calculator: {calc}, Operation: {result}')
-def close_log():
-    with open('log.txt', 'a') as file:
-        file.close()
 def counter():
     try:
         with open('log.txt', 'r') as file:

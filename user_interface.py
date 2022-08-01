@@ -26,7 +26,7 @@ def calc_real(count=pos,msg='Rational numbers'):
         mathExp=input('Введите выражение: ')
         if mathExp.upper()=='Q'or  mathExp.upper()=='Й': UserMane(count)
         elif mathExp.upper()=='S' or  mathExp.upper()=='Ы':
-            print('Работа программы с рациональным числами:\033[32m (1+2)*4+3\033[0m\nОтвет: \033[36m(1+2)*4+3= 15.0\033[0m')
+            print('Работа программы с рациональными числами:\033[32m (1+2)*4+3\033[0m\nОтвет: \033[36m(1+2)*4+3= 15.0\033[0m')
             calc_real()
         elif mathExp.upper()=='E' or  mathExp.upper()=='У': return
         else:
