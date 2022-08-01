@@ -9,3 +9,4 @@ def counter():
         with open('log.txt', 'r') as file:
             return int(file.readlines()[-1][0])+1
     except: return 1
+
