@@ -1,8 +1,9 @@
 from calc_complex import CalculatorComplex
 from calc_real import CalculatorReal
-from history import result_logger
+from history import result_logger,counter
 menu='\033[32m1. Назад - нажмите "Q"\033[0m.\n\033[33m2. Справка - нажмите "S"\033[31m\n3. Выход - "E".\033[0m'
-def calc_comp(count=1,msg='Complex numbers'): 
+pos=counter()
+def calc_comp(count=pos,msg='Complex numbers'): 
     try:
         mathExp=input('Введите выражение: ')
         if mathExp.upper()=='Q' or  mathExp.upper()=='Й': 
@@ -18,9 +19,9 @@ def calc_comp(count=1,msg='Complex numbers'):
             result_logger(count,result,msg)
             calc_comp(count+1)
     except:
-        print('Ошибка! повторите ввод!')
+        print('\033[31mОшибка! повторите ввод!\033[0m')
         calc_comp(count=count)
-def calc_real(count=1,msg='Rational numbers'): 
+def calc_real(count=pos,msg='Rational numbers'): 
     try:
         mathExp=input('Введите выражение: ')
         if mathExp.upper()=='Q'or  mathExp.upper()=='Й': UserMane(count)
@@ -35,9 +36,9 @@ def calc_real(count=1,msg='Rational numbers'):
             result_logger(count,result,msg)
             calc_real(count+1)
     except:
-        print('Ошибка! повторите ввод!')
+        print('\033[31mОшибка! повторите ввод!\033[0m')
         calc_real(count=count)
-def UserMane(temp=0):
+def UserMane(temp=pos):
     try:
         count=temp
         number = int(input('\n\033[1\033[33m\033[44m       М Е Н Ю:       \033[0m\n\033[32m1. Комплексные числа\033[0m\n\033[35m2. Рациональные числа\033[0m\n\033[31m3. Выход\033[0m\n\033[3mВведите значение: \033[0m'))
@@ -51,5 +52,5 @@ def UserMane(temp=0):
             case 3: 
                 return
     except:
-        print('Ошибка! Введите число 1,2,3 для перехода в меню.')
+        print('\033[33mОшибка! Введите число \033[0m\033[32m1   \033[0m\033[35m2   \033[0m\033[31m3\033[0\033[33m для перехода в меню.\033[0m')
         return UserMane()
