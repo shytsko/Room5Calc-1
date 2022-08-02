@@ -1,0 +1,8 @@
+1: Date: 02.08.2022  Time: 19:49 ,Calculator: Complex numbers, Operation: 5j = 5j
+2: Date: 02.08.2022  Time: 19:49 ,Calculator: Complex numbers, Operation: 1+6j = (1+6j)
+3: Date: 02.08.2022  Time: 19:49 ,Calculator: Complex numbers, Operation: 1+8+4+8j = (13+8j)
+4: Date: 02.08.2022  Time: 19:55 ,Calculator: Rational numbers, Operation: (8+6)*9/(5+6) = 11.454545454545455
+5: Date: 02.08.2022  Time: 19:57 ,Calculator: Rational numbers, Operation: (15+2j)*15 = [31mЭтот модуль не работает с комплексными числами[0m
+6: Date: 02.08.2022  Time: 19:57 ,Calculator: Rational numbers, Operation: (8+6)*9/(5+6) = 11.454545454545455
+7: Date: 02.08.2022  Time: 19:57 ,Calculator: Complex numbers, Operation: (8+2j)*15 = (120+30j)
+8: Date: 02.08.2022  Time: 19:58 ,Calculator: Complex numbers, Operation: 3 = 3.0
